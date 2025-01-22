@@ -8,11 +8,24 @@
   <name>jc-newselenium4</name>
   <url>http://maven.apache.org</url>
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.27.0</version>
+        </dependency>
   </dependencies>
 </project>
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.10.1</version> <!-- Pastikan versi plugin terbaru -->
+            <configuration>
+                <source>17</source> <!-- Versi JDK yang Anda gunakan -->
+                <target>17</target> <!-- Versi JDK yang Anda gunakan -->
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
